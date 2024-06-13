@@ -1,0 +1,22 @@
+> we are registering our table which we has created using model class, to default admin interface.
+
+To Register Follow:
+
+1. Open admin.py file which is inside Application Folder
+2. Import your own Model Class created inside Application models.py
+3. write code " admin.site.register(ModelClassName)" inside the admin.py file
+
+
+###### __str__() Method ##########
+
+The __str__() method is called whenever you call str() on an object. To display an object in 
+the Django admin site and as the value inserted into a template when it displays an object. 
+Thus, you should always return a nice, human-redable representation of the model from the
+__str__() method.
+
+write this Method in your ownmodel class which is inside models.py file.
+
+Syntax:-
+
+def __str__():
+	return self.fieldName	# self.std_name
